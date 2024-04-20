@@ -129,7 +129,6 @@ export class FreePlay extends Game {
     stopContinuousMovement = (direction) => {
         switch (direction) {
             case "forward":
-                this.forwardSpeed = this.car.startSpeed;
                 cancelAnimationFrame(this.forwardAnimationFrameId);
                 this.forwardAnimationFrameId = null;
                 break;

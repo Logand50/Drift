@@ -24,6 +24,8 @@ export class Options {
                 this.backgroundImageIndex -= 1;
             }
         }
+        this.backgroundInfoArea.setAttribute('id', 'backgroundTextVisible')
+        this.backgroundInfoArea.textContent = this.backgroundImages[this.backgroundImageIndex].split('.')[0]
         document.body.style.background = `url(images/backgrounds/${this.backgroundImages[this.backgroundImageIndex]})`;
         document.body.style.backgroundSize = 'cover'
         setTimeout(() => {
@@ -33,6 +35,7 @@ export class Options {
     }
     updateMPH = (speed) => {
         this.gaugeMPH.textContent = `${Math.trunc(speed) * 3} MPH`
+
     }
 }
 

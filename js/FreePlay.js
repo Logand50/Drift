@@ -215,7 +215,6 @@ export class FreePlay extends Game {
             this.car.element.style.left = `${this.xPos}px`;
             this.car.element.style.top = `${this.yPos}px`;
         }
-        this.options.updateMPH(this.reverseSpeed)
 
     }
     moveReverseContinuously = () => {
@@ -234,7 +233,7 @@ export class FreePlay extends Game {
         } else {
             this.reverseAnimationFrameId = requestAnimationFrame(this.moveReverseContinuously);
         }
-        speedGauge.textContent = `${Math.trunc(this.reverseSpeed) * 3} MPH`
+        this.options.updateMPH(this.reverseSpeed)
     }
     turnLeft = () => {    
         if ((this.wPressed || this.sPressed) && (this.forwardSpeed > this.car.minTurningSpeed 

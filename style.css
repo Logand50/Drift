@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#mode {
+    margin-top: 0;
+    padding: 15px;
+}
+
+#gameArea {
+    height: 100vh;
+}
+.car {
+    position: absolute;
+    left: 1;
+    top: 1;
+    z-index: -1;
+}
+
+#cone {
+    position: absolute;
+    z-index: -2;
+    left: 250px;
+}
+
+#backgroundButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+#backgroundButtons #previous{
+    width: 150px;
+}
+#backgroundButtons #next{
+    width: 150px;
+}
+
+#backgroundInfo{
+    display: flex;    
+    justify-content: center;
+    margin: auto;
+}
+#backgroundTextVisible{
+    background-color: rgba(105, 105, 105, .5);
+    box-shadow: 2px 2px 4px 5px rgba(105, 105, 105, .5) ;
+    padding: 0 20px;
+    margin: -20px auto;
+    width: 20px;
+
+    font-weight: bold;
+    text-align: center;
+}
+#backgroundTextHidden{
+    display: none;
+}
+
+.drifting {
+    background-color: black;
+    transform: rotateZ('-10deg');
+}
+
+#gauges {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}

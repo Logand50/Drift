@@ -1,0 +1,30 @@
+Simple Car Racing Game
+Logan Dye
+4/16/2024
+
+This code is in progress and new additions will be made.
+
+This is a simple car racing game built with HTML, CSS, and JavaScript. The game features a player-controlled car that can move left, right, forward, and backward on the screen. The objective of the game is to navigate the car through a track while avoiding obstacles.
+
+Features
+Player-controlled car movement using arrow keys (w, s, a, d).
+Forward and backward movement to navigate through the track.
+Realistic car movement with acceleration.
+
+Getting Started
+To play the game, simply open the index.html file in a web browser. Use the arrow keys on your keyboard to control the movement of the car:
+
+w: Move the car forward.
+s: Move the car backward.
+a: Steer the car to the left.
+d: Steer the car to the right.
+
+Development
+The game is built using HTML, CSS, and JavaScript. Here's a brief overview of the project structure:
+
+index.html: HTML file containing the game interface and structure.
+style.css: CSS file for styling the game elements and layout.
+script.js: JavaScript file containing the game logic and functionality.
+
+Credits
+This game was created by Logan Dye as a fun project to practice web development skills. Feel free to modify and expand upon the code to add new features or improve the gameplay experience.
